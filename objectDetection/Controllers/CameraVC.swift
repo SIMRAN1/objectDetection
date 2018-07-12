@@ -40,6 +40,26 @@ class CameraVC: UIViewController {
         super.viewWillAppear(animated)
         captureSession = AVCaptureSession()
         captureSession.sessionPreset = AVCaptureSession.Preset.hd1920x1080
+        let backCamera = AVCaptureDevice.default(for: AVMediaType.video)
+        
+        do {
+            let input = try AVCaptureDeviceInput(device: backCamera!)
+            if captureSession.canAddInput(input) == true {
+                captureSession.addInput(input)
+            }
+            
+            cameraOutput = AVCapturePhotoOutput()
+            if captureSession.canAddOutput(cameraOutput) == true {
+                captureSession.addOutput(cameraOutput!)
+                previewLayer = AVCaptureVideoPreviewLayer(session: captureSession!)
+                previewLayer.videoGravity = AVLayerVideoGravity.resizeAspect
+                previewLayer.connection?.videoOrientation = .portrait
+                cameraView.layer.addSublayer(previewLayer!)
+                captureSession.startRunning()
+            }
+        } catch {
+            debugPrint(error)
+        }
     }
 
     override func didReceiveMemoryWarning() {
