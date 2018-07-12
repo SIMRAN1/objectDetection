@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18F88A0920F7F339009E4344 /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F88A0820F7F339009E4344 /* RoundedShadowView.swift */; };
+		18F88A0B20F7F477009E4344 /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F88A0A20F7F477009E4344 /* RoundedShadowButton.swift */; };
+		18F88A0D20F7F4C5009E4344 /* RoundedShadowImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F88A0C20F7F4C5009E4344 /* RoundedShadowImageView.swift */; };
 		18FDE9FD20F6515600755956 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FDE9FC20F6515600755956 /* AppDelegate.swift */; };
 		18FDE9FF20F6515600755956 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FDE9FE20F6515600755956 /* CameraVC.swift */; };
 		18FDEA0220F6515600755956 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18FDEA0020F6515600755956 /* Main.storyboard */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18F88A0820F7F339009E4344 /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
+		18F88A0A20F7F477009E4344 /* RoundedShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowButton.swift; sourceTree = "<group>"; };
+		18F88A0C20F7F4C5009E4344 /* RoundedShadowImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowImageView.swift; sourceTree = "<group>"; };
 		18FDE9F920F6515600755956 /* objectDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = objectDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18FDE9FC20F6515600755956 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18FDE9FE20F6515600755956 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
@@ -138,6 +144,9 @@
 		18FDEA2B20F6521300755956 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				18F88A0820F7F339009E4344 /* RoundedShadowView.swift */,
+				18F88A0A20F7F477009E4344 /* RoundedShadowButton.swift */,
+				18F88A0C20F7F4C5009E4344 /* RoundedShadowImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -282,6 +291,9 @@
 			files = (
 				18FDE9FF20F6515600755956 /* CameraVC.swift in Sources */,
 				18FDE9FD20F6515600755956 /* AppDelegate.swift in Sources */,
+				18F88A0920F7F339009E4344 /* RoundedShadowView.swift in Sources */,
+				18F88A0B20F7F477009E4344 /* RoundedShadowButton.swift in Sources */,
+				18F88A0D20F7F4C5009E4344 /* RoundedShadowImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,6 +467,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5LJ8DPTK8Z;
 				INFOPLIST_FILE = objectDetection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -462,6 +475,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = simran.objectDetection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -472,6 +486,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5LJ8DPTK8Z;
 				INFOPLIST_FILE = objectDetection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -479,6 +494,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = simran.objectDetection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
