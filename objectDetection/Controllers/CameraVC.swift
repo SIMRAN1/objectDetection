@@ -7,8 +7,13 @@
 //
 
 import UIKit
+import AVFoundation
 
 class CameraVC: UIViewController {
+    
+    var captureSession: AVCaptureSession!
+    var cameraOutput: AVCapturePhotoOutput!
+    var previewLayer: AVCaptureVideoPreviewLayer!
 
     @IBOutlet weak var cameraView: UIView!
     
@@ -23,6 +28,18 @@ class CameraVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        previewLayer.frame = cameraView.bounds
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        captureSession = AVCaptureSession()
+        captureSession.sessionPreset = AVCaptureSession.Preset.hd1920x1080
     }
 
     override func didReceiveMemoryWarning() {
